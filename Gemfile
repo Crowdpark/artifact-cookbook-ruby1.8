@@ -6,4 +6,5 @@ gem 'test-kitchen', git: 'git@github.com:opscode/test-kitchen.git'
 gem 'kitchen-vagrant', :group => :integration
 gem 'rspec'
 gem 'chef', '~> 10.18'
+gem 'nokogiri', '= 1.5.10'
 gem 'aws-sdk', '= 1.15.0'

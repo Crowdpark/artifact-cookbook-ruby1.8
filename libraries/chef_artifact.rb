@@ -108,7 +108,7 @@ class Chef
             object.read do |chunk|
               file.write(chunk)
             end
-            Chef::Log.debug("File #{destination_file} is #{file.size} bytes on disk")
+            #Chef::Log.debug("File #{destination_file} is #{file.size} bytes on disk")
           end
         rescue URI::InvalidURIError
           Chef::Log.warn("Expected an S3 URL but found #{source_file}")

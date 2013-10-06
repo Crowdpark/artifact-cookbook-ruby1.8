@@ -74,6 +74,11 @@ def load_current_resource
       end
     end
 
+    # install latest nokogiri gem compatible with ruby 1.8.7
+    chef_gem 'nokogiri' do
+        version '1.5.10'
+    end
+
     chef_gem "aws-sdk" do
       version "1.11.0"
     end
